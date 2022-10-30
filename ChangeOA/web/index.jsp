@@ -9,9 +9,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>index</title>
+  <title>欢迎使用登录界面</title>
 </head>
 <body>
-<a href="<%=request.getContextPath()%>/dept/list">查看部门列表</a>
+<h1>欢迎登录</h1>
+<form action="<%=request.getContextPath()%>/user/login" method="post">
+  username:<input type="text" name="username"><br>
+  password:<input type="text" name="password"><br>
+  <input type="submit" value="login">
+</form>
 </body>
 </html>
