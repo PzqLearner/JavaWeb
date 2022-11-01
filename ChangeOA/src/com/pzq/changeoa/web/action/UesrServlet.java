@@ -14,10 +14,26 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-@WebServlet("/user/login")
+@WebServlet({"/user/login","/user/exit"})
 public class UesrServlet extends HttpServlet {
     @Override
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        String servletPath = request.getServletPath();
+        if ("/user/login".equals(servletPath)) {
+            doLogin(request,response);
+        }else if ("/user/exit".equals(servletPath)){
+            doExit(request,response);
+        }
+    }
+
+    private void doExit(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
+        HttpSession session = request.getSession(false);
+        if (session!=null) {
+            response.sendRedirect(request.getContextPath()+"/index.jsp");
+        }
+    }
+
+    protected void doLogin(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String username = request.getParameter("username");
         String password = request.getParameter("password");
         boolean flag=false;

@@ -14,6 +14,8 @@
     }
 </script>
 <body>
+<h1><a>欢迎<%=session.getAttribute("username")%>!!!</a></h1>
+<h3><a href="<%=request.getContextPath()%>/user/exit">[安全退出]</a></h3>
     <table border="1px" align="center" width="50%">
         <tr>
             <th>序号</th>
