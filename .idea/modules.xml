@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/AServlet/AServlet.iml" filepath="$PROJECT_DIR$/AServlet/AServlet.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ChangeOA/ChangeOA.iml" filepath="$PROJECT_DIR$/ChangeOA/ChangeOA.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Experiment_1/Experiment_1.iml" filepath="$PROJECT_DIR$/Experiment_1/Experiment_1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RequestTest/RequestTest.iml" filepath="$PROJECT_DIR$/RequestTest/RequestTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Servlet02/Servlet02.iml" filepath="$PROJECT_DIR$/Servlet02/Servlet02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Servlet08/Servlet08.iml" filepath="$PROJECT_DIR$/Servlet08/Servlet08.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Servlet3/Servlet3.iml" filepath="$PROJECT_DIR$/Servlet3/Servlet3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Servlet4/Servlet4.iml" filepath="$PROJECT_DIR$/Servlet4/Servlet4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Test/Test.iml" filepath="$PROJECT_DIR$/Test/Test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dy2002014125pzq/dy2002014125pzq.iml" filepath="$PROJECT_DIR$/dy2002014125pzq/dy2002014125pzq.iml" />
+      <module fileurl="file://$PROJECT_DIR$/oa/oa.iml" filepath="$PROJECT_DIR$/oa/oa.iml" />
+      <module fileurl="file://$PROJECT_DIR$/servlet01/servlet01.iml" filepath="$PROJECT_DIR$/servlet01/servlet01.iml" />
+    </modules>
+  </component>
+</project>

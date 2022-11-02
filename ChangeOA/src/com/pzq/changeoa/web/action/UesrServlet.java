@@ -3,10 +3,7 @@ package com.pzq.changeoa.web.action;
 import com.pzq.changeoa.utils.DBUtils;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
-import jakarta.servlet.http.HttpServlet;
-import jakarta.servlet.http.HttpServletRequest;
-import jakarta.servlet.http.HttpServletResponse;
-import jakarta.servlet.http.HttpSession;
+import jakarta.servlet.http.*;
 
 import java.io.IOException;
 import java.sql.Connection;
@@ -58,6 +55,21 @@ public class UesrServlet extends HttpServlet {
         if (flag){
             HttpSession session = request.getSession();
             session.setAttribute("username",username);
+            String f = request.getParameter("f");
+            if ("1".equals(f)){
+                Cookie cookie = new Cookie("username", username);
+                Cookie cookie1 = new Cookie("password", password);
+
+                cookie.setMaxAge(60*60*24*10);
+                cookie1.setMaxAge(60*60*24*10);
+
+                cookie.setPath(request.getContextPath());
+                cookie1.setPath(request.getContextPath());
+
+                //响应cookie
+                response.addCookie(cookie);
+                response.addCookie(cookie1);
+            }
             response.sendRedirect(request.getContextPath()+"/dept/list");
         }
         else {
